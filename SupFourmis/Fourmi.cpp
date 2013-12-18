@@ -7,9 +7,17 @@
 //
 
 #include "Fourmi.h"
+#include "Etat.h"
 
 Fourmi:: Fourmi(Plateau& plat)
 {
     int x = (plat.get_l() - 1) / 2;
     int y = (plat.get_h() - 1) / 2;
+    Etat *state = &plat.get_case(x, y);
+    while ((*state).get_o())
+    {
+        /*
+         faire un switch sur la direction, et modifier le x et/ou y en fonction du résultat
+         */
+    }
 };

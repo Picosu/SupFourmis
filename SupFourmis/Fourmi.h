@@ -14,7 +14,7 @@ class Fourmi
 {
     // Attributes
     public :
-        int i,j;
+        int x,y;
         int d;
     
     // Methods

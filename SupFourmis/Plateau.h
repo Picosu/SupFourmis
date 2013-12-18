@@ -31,7 +31,7 @@ public:
     unsigned int get_l();
     
     // Surcharge d'opérateurs
-    Plateau& operator=(const Plateau &plateau);
+    Plateau& operator=(const Plateau &plateau); // Forme Coplien aussi
     Plateau& operator++(const int k);
 };
 
