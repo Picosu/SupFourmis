@@ -49,5 +49,5 @@ unsigned int Etat::modif_d()
 char Etat::symbole()
 {
     char symboles[8] = {'o', 'n', 'e', 's', 'O', 'N', 'E', 'S'};
-    return symboles[(direction-1) + (occupe ? 4 : 0)];
+    return symboles[direction + (occupe ? 3 : -1)];
 }
