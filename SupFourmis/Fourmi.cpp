@@ -16,6 +16,21 @@ Fourmi:: Fourmi(Plateau& plat)
     Etat *state = &plat.get_case(x, y);
     while ((*state).get_o())
     {
+        switch ((*state).modif_d())
+        {
+        case 1:
+            x--;
+            break;
+        case 2:
+            y--;
+            break;
+        case 3:
+            x++;
+            break;
+        case 4:
+            y++;
+        }
+        state = &plat.get_case(x, y);
         /*
          faire un switch sur la direction, et modifier le x et/ou y en fonction du résultat
          */
