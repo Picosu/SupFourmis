@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		870234FB1861829A00A4CAB6 /* Fourmi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 870234FA1861829A00A4CAB6 /* Fourmi.cpp */; };
 		8715006F1860D6750016B617 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8715006E1860D6750016B617 /* main.cpp */; };
-		871500711860D6750016B617 /* SupFourmis.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 871500701860D6750016B617 /* SupFourmis.1 */; };
 		871500791860D73D0016B617 /* Etat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 871500781860D73D0016B617 /* Etat.cpp */; };
 		8715007C1860D7580016B617 /* Plateau.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8715007B1860D7580016B617 /* Plateau.cpp */; };
 		87B43F0D18636D4500CA5C5A /* Fourmiliere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87B43F0C18636D4500CA5C5A /* Fourmiliere.cpp */; };
@@ -22,7 +21,6 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				871500711860D6750016B617 /* SupFourmis.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -32,7 +30,6 @@
 		870234FA1861829A00A4CAB6 /* Fourmi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Fourmi.cpp; sourceTree = "<group>"; };
 		8715006B1860D6750016B617 /* SupFourmis */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SupFourmis; sourceTree = BUILT_PRODUCTS_DIR; };
 		8715006E1860D6750016B617 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		871500701860D6750016B617 /* SupFourmis.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = SupFourmis.1; sourceTree = "<group>"; };
 		871500771860D7110016B617 /* Etat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Etat.h; sourceTree = "<group>"; };
 		871500781860D73D0016B617 /* Etat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Etat.cpp; sourceTree = "<group>"; };
 		8715007A1860D7500016B617 /* Plateau.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Plateau.h; sourceTree = "<group>"; };
@@ -81,7 +78,6 @@
 				871500781860D73D0016B617 /* Etat.cpp */,
 				8715007A1860D7500016B617 /* Plateau.h */,
 				8715007B1860D7580016B617 /* Plateau.cpp */,
-				871500701860D6750016B617 /* SupFourmis.1 */,
 			);
 			path = SupFourmis;
 			sourceTree = "<group>";

@@ -20,7 +20,7 @@ void Fourmiliere::ajout()
     popu.push_back(fourmi);
     test = popu;
 }
-
+sdfg
 void Fourmiliere::affiche()
 {
     

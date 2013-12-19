@@ -17,7 +17,6 @@ int main(int argc, const char * argv[])
     int nombreFourmi = 3;
     Plateau pl;
     Fourmiliere f(pl);
-    //std::cout << f.get_nb();
 
     for (int i = 0; i < nombreFourmi; i++)
     {
