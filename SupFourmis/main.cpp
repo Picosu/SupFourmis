@@ -9,18 +9,23 @@
 #include <iostream>
 #include "Etat.h"
 #include "Plateau.h"
+#include "Fourmiliere.h"
 
 int main(int argc, const char * argv[])
 {
 
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    int nombreFourmi = 3;
     Plateau pl;
+    Fourmiliere f(pl);
+    //std::cout << f.get_nb();
 
-    pl.affiche();
-    pl.~Plateau();
+    for (int i = 0; i < nombreFourmi; i++)
+    {
+        f.ajout();
+    }
+    //f.stats();
+    f.affiche();
     
-    pl.affiche();
     return 0;
 }
 

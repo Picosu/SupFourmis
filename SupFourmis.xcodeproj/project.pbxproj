@@ -12,6 +12,7 @@
 		871500711860D6750016B617 /* SupFourmis.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 871500701860D6750016B617 /* SupFourmis.1 */; };
 		871500791860D73D0016B617 /* Etat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 871500781860D73D0016B617 /* Etat.cpp */; };
 		8715007C1860D7580016B617 /* Plateau.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8715007B1860D7580016B617 /* Plateau.cpp */; };
+		87B43F0D18636D4500CA5C5A /* Fourmiliere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87B43F0C18636D4500CA5C5A /* Fourmiliere.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,8 @@
 		8715007A1860D7500016B617 /* Plateau.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Plateau.h; sourceTree = "<group>"; };
 		8715007B1860D7580016B617 /* Plateau.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Plateau.cpp; sourceTree = "<group>"; };
 		871500821860FC030016B617 /* Fourmi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fourmi.h; sourceTree = "<group>"; };
+		87B43F0B18636D3B00CA5C5A /* Fourmiliere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fourmiliere.h; sourceTree = "<group>"; };
+		87B43F0C18636D4500CA5C5A /* Fourmiliere.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Fourmiliere.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +72,8 @@
 		8715006D1860D6750016B617 /* SupFourmis */ = {
 			isa = PBXGroup;
 			children = (
+				87B43F0B18636D3B00CA5C5A /* Fourmiliere.h */,
+				87B43F0C18636D4500CA5C5A /* Fourmiliere.cpp */,
 				871500821860FC030016B617 /* Fourmi.h */,
 				870234FA1861829A00A4CAB6 /* Fourmi.cpp */,
 				8715006E1860D6750016B617 /* main.cpp */,
@@ -134,6 +139,7 @@
 			files = (
 				8715006F1860D6750016B617 /* main.cpp in Sources */,
 				870234FB1861829A00A4CAB6 /* Fourmi.cpp in Sources */,
+				87B43F0D18636D4500CA5C5A /* Fourmiliere.cpp in Sources */,
 				8715007C1860D7580016B617 /* Plateau.cpp in Sources */,
 				871500791860D73D0016B617 /* Etat.cpp in Sources */,
 			);

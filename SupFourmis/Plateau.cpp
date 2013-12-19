@@ -17,7 +17,7 @@ Plateau::Plateau()
     set_tab(9, 15);
 }
 
-Plateau::Plateau(unsigned int h, unsigned int l)
+Plateau::Plateau(int h, int l)
 {
     set_tab(h, l);
 }
@@ -40,7 +40,7 @@ Plateau::~Plateau()
 }
 
 //------------------------------------
-void Plateau::set_tab(unsigned int h, unsigned int l)
+void Plateau::set_tab(int h, int l)
 {
     hauteur = h;
     largeur = l;
@@ -50,10 +50,10 @@ void Plateau::set_tab(unsigned int h, unsigned int l)
         largeur = 15;
     }
     tab = new Etat*[largeur];
-    for(unsigned int x = 0; x < largeur; x++)
+    for(int x = 0; x < largeur; x++)
     {
         tab[x] = new Etat[hauteur];
-        for(unsigned int y = 0; y < hauteur; y++)
+        for(int y = 0; y < hauteur; y++)
         {
             Etat t;
             tab[x][y] = t;
@@ -63,9 +63,9 @@ void Plateau::set_tab(unsigned int h, unsigned int l)
 
 void Plateau::affiche()
 {
-    for(unsigned int y = 0; y < hauteur; y++)
+    for(int y = 0; y < hauteur; y++)
     {
-        for(unsigned int x = 0; x < largeur; x++)
+        for(int x = 0; x < largeur; x++)
         {
             std::cout << tab[x][y].symbole();
         }
@@ -73,17 +73,17 @@ void Plateau::affiche()
     }
 }
 
-Etat& Plateau::get_case(unsigned int x, unsigned int y)
+Etat& Plateau::get_case(int x, int y)
 {
     return tab[x][y];
 }
 
-unsigned int Plateau::get_h()
+int Plateau::get_h()
 {
     return hauteur;
 }
 
-unsigned int Plateau::get_l()
+int Plateau::get_l()
 {
     return largeur;
 }

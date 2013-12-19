@@ -22,11 +22,11 @@ private:
      */
 public:
     Etat();
-    Etat(bool o, unsigned int d);
+    Etat(bool o, int d);
     bool get_o();
     unsigned int get_d();
     void set_o(bool o);
-    void set_d(unsigned int d);
+    void set_d(int d);
     unsigned int modif_d();
     char symbole();
 }; 

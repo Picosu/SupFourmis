@@ -9,6 +9,7 @@
 #ifndef SupFourmis_Fourmi_h
 #define SupFourmis_Fourmi_h
 #include "Plateau.h"
+#include <iostream>
 
 class Fourmi
 {

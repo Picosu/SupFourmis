@@ -13,7 +13,7 @@ class Plateau
 {
 private:
     Etat** tab;
-    unsigned int hauteur, largeur;
+    int hauteur, largeur;
 public:
     /*! 
      *Forme canonique coplien
@@ -23,12 +23,12 @@ public:
     ~Plateau();
     
     //------------------------------------
-    Plateau(unsigned int h, unsigned int l);
-    void set_tab(unsigned int h, unsigned int l);
+    Plateau(int h, int l);
+    void set_tab(int h, int l);
     void affiche();
-    Etat& get_case(unsigned int x, unsigned int y);
-    unsigned int get_h();
-    unsigned int get_l();
+    Etat& get_case(int x, int y);
+    int get_h();
+    int get_l();
     
     // Surcharge d'opérateurs
     Plateau& operator=(const Plateau &plateau); // Forme Coplien aussi

@@ -13,7 +13,7 @@ Etat::Etat()
     occupe = false;
     direction = 1;
 }
-Etat::Etat(bool o, unsigned int d)
+Etat::Etat(bool o, int d)
 {
     occupe = o;
     direction = d;
@@ -34,7 +34,7 @@ void Etat::set_o(bool o)
 {
     occupe = o;
 }
-void Etat::set_d(unsigned int d)
+void Etat::set_d(int d)
 {
     if (d > 4)
     {
