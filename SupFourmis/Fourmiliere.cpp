@@ -23,7 +23,7 @@ void Fourmiliere::ajout()
 
 void Fourmiliere::affiche()
 {
-    
+    // some text
     std::cout << "Fourmi numero " << nb << std::endl << std::endl;
     plateau->affiche();
     std::cout << "Distance parcourue par la fourmi : " << popu[nb-1].get_d() << std::endl;
