@@ -45,7 +45,6 @@ void Fourmiliere::stats()
         {
             min = (*i).Fourmi::get_d();
         }
-        std::cout << (*i).Fourmi::get_d();
         if (max < (*i).Fourmi::get_d())
         {
             max = (*i).Fourmi::get_d();

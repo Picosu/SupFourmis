@@ -14,7 +14,7 @@
 int main(int argc, const char * argv[])
 {
 
-    int nombreFourmi = 3;
+    int nombreFourmi = 8;
     Plateau pl;
     Fourmiliere f(pl);
 
@@ -22,9 +22,8 @@ int main(int argc, const char * argv[])
     {
         f.ajout();
     }
-    //f.stats();
+    f.stats();
     f.affiche();
     
     return 0;
 }
-
