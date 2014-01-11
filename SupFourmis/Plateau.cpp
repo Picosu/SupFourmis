@@ -44,7 +44,7 @@ void Plateau::set_tab(int h, int l)
 {
     hauteur = h;
     largeur = l;
-    if(!(hauteur & 1) || !(largeur & 1)) // test à l'aide du nombre binaire, équivalent à % 2 != 0
+    if(!(hauteur & 1) || !(largeur & 1)) // test binary number, same as % 2 != 0
     {
         hauteur = 9;
         largeur = 15;

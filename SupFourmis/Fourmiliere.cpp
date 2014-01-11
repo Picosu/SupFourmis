@@ -55,6 +55,7 @@ void Fourmiliere::stats()
 
 void Fourmiliere::stats(int n, int m)
 {
+    // Testing if the two values are ordered, if they're not, order them.
     int min(0),max(0);
     if (n > m)
     {
