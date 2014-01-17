@@ -36,30 +36,36 @@ int Fourmiliere::get_nb()
 
 void Fourmiliere::stats()
 {
-    int min(0), max(0), indexMinFourmis(0), indexMaxFourmis(0);
+    int min(0), max(0), indexMinFourmis(0), indexMaxFourmis(0), moyenne(0);
     // two choices are available, either from 0 to the size() -1 or from the beginning to the end
     std::vector<Fourmi>::iterator i;
     for (i=popu.begin(); i!=popu.end(); i++)
     {
-        if (min > (*i).Fourmi::get_d())
+        int value = (*i).Fourmi::get_d();
+        moyenne += value;
+        
+        if (min > value)
         {
             indexMinFourmis = (int)std::distance(popu.begin(), i);
-            min = (*i).Fourmi::get_d();
+            min = value;
         }
-        if (max < (*i).Fourmi::get_d())
+        if (max < value)
         {
             indexMaxFourmis = (int)std::distance(popu.begin(), i);
-            max = (*i).Fourmi::get_d();
+            max = value;
         }
     }
     std::cout << "Distance minimale : " << min << " parcourue par la fourmi : " << indexMinFourmis  << std::endl;
     std::cout << "Distance maximale : " << max << " parcourue par la fourmi : " << indexMaxFourmis  << std::endl;
+    
+    std::cout << "Distance moyenne : " << moyenne << std::endl;
+
 }
 
 void Fourmiliere::stats(int n, int m)
 {
     // Testing if the two values are ordered, if they're not, order them.
-    int min(0),max(0), indexMinFourmis(0), indexMaxFourmis(0);
+    int min(0),max(0), indexMinFourmis(0), indexMaxFourmis(0), moyenne(0);
     if (n > m)
     {
         int temp = m;
@@ -70,6 +76,7 @@ void Fourmiliere::stats(int n, int m)
     for (int i = n; i <= m; i++)
     {
         int value = popu[i].get_d();
+        moyenne += value;
         if (min > value)
         {
             indexMinFourmis = i;
@@ -80,9 +87,9 @@ void Fourmiliere::stats(int n, int m)
             indexMaxFourmis = i;
             max = value;
         }
+        moyenne = moyenne / (m - n);
     }
     std::cout << "Distance minimale : " << min << " parcourue par la fourmi : " << indexMinFourmis  << std::endl;
     std::cout << "Distance maximale : " << max << " parcourue par la fourmi : " << indexMaxFourmis  << std::endl;
-
-    std::cout << "min : " << min << " max : " << max << std::endl;
+    std::cout << "Distance moyenne : " << moyenne << std::endl;
 }

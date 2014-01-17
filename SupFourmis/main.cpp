@@ -14,7 +14,7 @@
 int main(int argc, const char * argv[])
 {
 
-    int nombreFourmi = 8;
+    int nombreFourmi = 18;
     Plateau pl;
     Fourmiliere f(pl);
 
